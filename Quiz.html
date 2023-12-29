@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>New</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="final.png">
+	<link href="new.css" rel="stylesheet">
+	<script>
+	function startTimer() {
+		var timeLeft = 120; // set the timer to 2 minutes
+		var timer = setInterval(function(){
+		var minutes = Math.floor(timeLeft / 60);
+		var seconds = timeLeft % 60;
+		document.getElementById("timer").innerHTML = minutes + ":" + seconds;
+		timeLeft -= 1;
+		if(timeLeft <= 0){
+			clearInterval(timer);
+			window.alert("Time's up! Your quiz has been submitted.");
+			document.getElementById("quiz-form").submit();
+			window.close();
+		}
+	}, 1000); //set the timer to update every second
+    }
+	startTimer();
+	function check(){
+		var question1=document.quiz.question1.value;
+		var question2=document.quiz.question2.value;
+		var question3=document.quiz.question3.value;
+		var question4=document.quiz.question4.value;
+		var question5=document.quiz.question5.value;
+		var correct=0;
+		
+		if (question1=="Three") {correct+=2}
+		else {correct=correct-1}
+		if (question2=="Twice") {correct+=2}
+		else {correct=correct-1}
+		if (question3=="Yes") {correct+=2}
+		else {correct=correct-1}
+		if (question4=="Whenever you can fit it in") {correct+=2}
+		else {correct=correct-1}
+		if (question5=="Exercise Boosts Brainpower") {correct+=2}
+		else {correct=correct-1}
+		
+		var messages= [" gold badge."," silver badge. "," bronze badge. "];
+		var range;
+		
+		if (correct < 3) {
+			range=2;
+		}
+		
+		if (correct > 0 && correct < 8) {
+			range=1;
+		}
+		
+		if (correct > 8) {
+			range=0;
+		}
+		document.getElementById("after_submit").style.visibility="visible";
+		window.alert("Congratulations! You have earned " + correct + " marks" + " with a" + messages[range] + " Please claim the points in your next purchase." );
+	}
+	
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	window.onclick = function(e)
+	{
+		if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+			}
+		}
+	}
+	</script>
+	</head>
+	<body>
+		<div class="logo">
+			<a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+		</div>
+		<nav>
+			<ul>
+			  <li><a href="Signup.html">SignIn</a></li>    
+			  <div class="dropdown">
+				<button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+				<div class="dropdown-content" id="myDropdown">
+				  <a href="supplements.html">Supplements</a>
+				  <a href="fitness accessories.html">Fitness Accesories</a>
+				  <a href="clothing.html">Clothing</a>
+				  <a href="MANS Fintness.html">MANS Products</a>
+				</div>
+			   </div> 
+			  <li><a href="gallerypage.html">Healthy Food</a></li>
+			  <li><a href="Quiz.html">Quiz</a></li>
+			  <li><a href="mylist.html">Leader Board</a></li>
+			  <li><a href="AboutUs.html">About us</a></li>
+			  <li><a href="Feedback Form.html">Feedback</a></li>
+			  
+			</ul>
+		  </nav>
+	  
+		<br><br>
+		<div id="timer">00:00</div>
+		<div class="questions">
+			<form name="quiz" id="quiz">
+				<p>1. How often should you exercise a week?</p>
+				<input type="radio" id="mc" name="question1" value="One">A. One<br>
+				<input type="radio" id="mc" name="question1" value="Two">B. Two<br>
+				<input type="radio" id="mc" name="question1" value="Three">C. Three<br>
+				<input type="radio" id="mc" name="question1" value="Four">D. Four<br>
+				
+				<p>2. How often do you need a rest day?</p>
+				<input type="radio" id="mc" name="question2" value="Once">A. Once<br>
+				<input type="radio" id="mc" name="question2" value="Twice">B. Twice<br>
+				<input type="radio" id="mc" name="question2" value="Thrice">C. Thrice<br>
+				<input type="radio" id="mc" name="question2" value="As you wish">D. As you wish<br>
+				
+				<p>3. Do you need to warm up before your workouts?</p>
+				<input type="radio" id="mc" name="question3" value="Yes">A. Yes<br>
+				<input type="radio" id="mc" name="question3" value="No">B. No<br>
+				<input type="radio" id="mc" name="question3" value="Depends">C. Depends<br>
+				<input type="radio" id="mc" name="question3" value="Only if you wish">D. Only if you wish<br>
+				
+				<p>4. What time of day is best to workout?</p>
+				<input type="radio" id="mc" name="question4" value="Morning">A. Morning<br>
+				<input type="radio" id="mc" name="question4" value="Evening">B. Evening<br>
+				<input type="radio" id="mc" name="question4" value="Night">C. Night<br>
+				<input type="radio" id="mc" name="question4" value="Whenever you can fit it in">D. Whenever you can fit it in<br>
+				
+				<p>5. A fitness fact would be?</p>
+				<input type="radio" id="mc" name="question5" value="Exercise Boosts Brainpower">A. Exercise Boosts Brainpower<br>
+				<input type="radio" id="mc" name="question5" value="Heart Disease">B. Heart Disease<br>
+				<input type="radio" id="mc" name="question5" value="High Blood Cholesterol">C. High Blood Cholesterol<br>
+				<input type="radio" id="mc" name="question5" value="Diabetes">D. Diabetes<br>
+				<br><br>
+				<input type="button" name="button" value="Submit" id="button" onclick="check()">
+			</form>
+		</div>
+		<div id= "after_submit">
+			<p id="message"></p>
+			<p id= "number_correct"></p>
+		</div>
+		<footer>
+			<center><a href="Stud_02_Editor.html">EDITOR</a>
+			<hr>
+			<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+			</center>
+		</footer>
+	</body>
+</html>		
+

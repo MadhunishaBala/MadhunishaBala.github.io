@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ <title> Editor's page </title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/x-icon" href="final.png">
+ <link rel="stylesheet" href="Editor.css">
+</head>
+<script>
+  function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+				}
+			}
+		}
+</script>
+
+<body>
+  <div class="bgcolor">
+    <div class="logo">
+      <a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+    </div>
+    <nav>
+      <ul>
+      <li><a href="Signup.html">SignIn</a></li>    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+        <div class="dropdown-content" id="myDropdown">
+        <a href="supplements.html">Supplements</a>
+        <a href="fitness accessories.html">Fitness Accesories</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="MANS Fintness.html">MANS Products</a>
+        </div>
+       </div> 
+      <li><a href="gallerypage.html">Healthy Food</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="mylist.html">Leader Board</a></li>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="Feedback Form.html">Feedback</a></li>
+      
+      </ul>
+    </nav>
+  
+
+  
+  <div class="header">
+    <h4>ABOUT ME</h4>
+  </div>
+
+  <div class="left">
+    <img src="sam.jpeg" class="style2" alt="Photo of Me" width="280" height="280">
+  </div>
+
+  <br>
+
+  <div class="para">
+  <p>Welcome to <em>MANS</em>.I am Samrithaa Jeevaratnam, I am 18 years old.
+    I schooled at Royal Institute and completed my high school studies in the year of 2022. I am currently doing
+    my degree of Artifical Intelligence and Data Science at Informatics Institute of Technology which is affliated with 
+    the Robert Gordon University situated in UK. This website is created by my friends and I for our Web Technology CourseWork, which
+    is regarding <i>Fitness and Health</i>. Here's a small flashback on my fitness story!
+  </p>
+  </div> 
+
+  <div class="para">
+  <p>
+    Health and fitness are two of life's most significant facets; one defines health as one's overall state of physical and mental well-being, and fitness as ability of the person to encounter the demands of the environment. Sam has done a great job of keeping up with both of these aspects. She is improving further owing to a healthy diet and consistent workout. Internal, mental, and emotional fitness also greatly alter her productivity on a day-to-day basis. Being or seeming physically strong and muscular is not the sole part of health and fitness. 
+
+  </p>
+  </div>
+
+  <div class="para">
+    <p>
+      I don't need to go to the gym or lift weights to stay in shape.I pursue additional training regimens, such as yoga and dancing, and I maintain a good diet, all of which contribute to her ability to remain fit and strong. Thanks to my active lifestyle, I have strong immunological and metabolic systems among other things.
+
+    </p>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <div class="para1">
+    <p class="parafont"><br>HOBBIES<br></p>
+    <div class="edrow">
+      <div class="column">
+		  <img class="radius" src="swim.png" alt="Swimming" width="90%">
+      <p class="phobby">Swimming</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="basketball.jpeg" alt="Basketball" width="90%">
+      <p class="phobby">Basketball</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="instgaram-nisha.png" alt="Instagram" width="90%">
+      <p class="phobby">Browsing through Instagram</p>
+		</div>
+	  </div>
+	</div>
+  <br>
+
+  <footer>
+    <center>
+    <a href="https://www.instagram.com/sam_rithaaaa/" target="_blank"><img src="insta.png" alt="Insta" width="5%" height="10%"></a>
+    <a href="https://web.snapchat.com/" target="_blank"><img src="snapchat.png" alt="Snap" width="5%" height="10%"></a>
+    <a href="https://www.pinterest.com/samrithaaJeevaratnam/" target="_blank"><img src="pinterest.png" alt="pinterest" width="5%" height="10%"></a>
+    <hr>
+		<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>  
+  </center>
+  </footer>
+  </div>
+  
+    
+</body>
+</html>

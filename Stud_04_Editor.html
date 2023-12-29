@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ <title> Editor's page </title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/x-icon" href="final.png">
+ <link rel="stylesheet" href="Editor.css">
+</head>
+<script>
+  function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+				}
+			}
+		}
+</script>
+
+<body>
+  <div class="bgcolor">
+    <div class="logo">
+      <a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+    </div>
+    <nav>
+      <ul>
+      <li><a href="Signup.html">SignIn</a></li>    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+        <div class="dropdown-content" id="myDropdown">
+        <a href="supplements.html">Supplements</a>
+        <a href="fitness accessories.html">Fitness Accesories</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="MANS Fintness.html">MANS Products</a>
+        </div>
+       </div> 
+      <li><a href="gallerypage.html">Healthy Food</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="mylist.html">Leader Board</a></li>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="Feedback Form.html">Feedback</a></li>
+      
+      </ul>
+    </nav>
+  
+  
+  
+  <div class="header">
+    <h4>ABOUT ME</h4>
+  </div>
+
+  <div class="left">
+    <img src="Nisha.jpg" class="style2" alt="Photo of Me" width="280" height="280">
+  </div>
+
+  <br>
+
+  <div class="para">
+  <p>Welcome to <em>MANS</em>.I am Madhunisha Balajeyandhan, I am 18 years old.
+    I schooled at Royal Institute and completed my high school studies in 2022. I am currently doing
+    my degree in Artificial Intelligence and Data Science at the Informatics Institute of Technology which is affiliated with 
+    Robert Gordon University is situated in the UK. This website is created by my friends and me for our Web Technology CourseWork, which
+    is regarding <i>Fitness and Health</i>. Here's a small flashback of my fitness story!
+  </p>
+  </div> 
+
+  <div class="para">
+  <p>
+    Fitness was never my thing, when I was in my early teens I used to intake food based on my likes,
+    which most of the time is to be junk and a very less intake of vegetables. The quantity of this intake used to be 
+    very large, I remember I just keep on eating even though I don't feel hungry cause I loved the junk.
+    As you expect,<b>YES</b> I put up so much weight. Well, the realization didn't hit till I went shopping one day and
+    found out that I no more fit the size Large and have to move to size XL. I wouldn't say I was insecure,
+    but I didn't the adjective "fat" to be used to define me. But, trust me, I took no action, I instead changed my
+    mentality and said to myself "being healthy is important".
+  </p>
+  </div>
+
+  <div class="para">
+    <p>
+     It was during the pandemic when I was at home, I started an exercise routine to keep myself from being lazy.
+      Though the exercise routine was not done daily, I felt very energetic and flexible with this.
+      I also started to cut down on sugars and increase the intake of proteins and vegetables, I finally started to follow
+      the food pyramid I learned in Grade 3. Fast-forward to today, I have reduced so much weight
+      and also am very healthy than I was back then.
+    </p>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <div class="para1">
+    <p class="parafont"><br>HOBBIES<br></p>
+    <div class="edrow">
+      <div class="column">
+		  <img class="radius" src="singing.png" alt="Singing" width="90%">
+      <p class="phobby">Singing</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="basetball-nisha.png" alt="Basketball" width="90%">
+      <p class="phobby">Basketball</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="instgaram-nisha.png" alt="Instagram" width="90%">
+      <p class="phobby">Browsing through Instagram</p>
+		</div>
+	  </div>
+	</div>
+  <br>
+
+  <footer>
+    <center>
+    <a href="https://www.instagram.com/madhunisha._/" target="_blank"><img src="insta.png" alt="Insta" width="5%" height="10%"></a>
+    <a href="https://www.snapchat.com/add/nisha_bala6181?share_id=Q-liQY5pc-I&locale=en-GB" target="_blank"><img src="snapchat.png" alt="Snap" width="5%" height="10%"></a>
+    <a href="https://www.pinterest.com/madhunishabala/" target="_blank"><img src="pinterest.png" alt="pinterest" width="5%" height="10%"></a>
+    <hr>
+		<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+    </center>
+  </footer>
+  </div>
+  
+    
+</body>
+</html>

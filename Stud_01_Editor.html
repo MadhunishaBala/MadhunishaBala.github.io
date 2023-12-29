@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ <title> Editor's page </title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/x-icon" href="final.png">
+ <link rel="stylesheet" href="Editor.css">
+</head>
+<script>
+  function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+				}
+			}
+		}
+</script>
+
+<body>
+  <div class="bgcolor">
+    <div class="logo">
+      <a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+    </div>
+    <nav>
+      <ul>
+      <li><a href="Signup.html">SignIn</a></li>    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+        <div class="dropdown-content" id="myDropdown">
+        <a href="supplements.html">Supplements</a>
+        <a href="fitness accessories.html">Fitness Accesories</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="MANS Fintness.html">MANS Products</a>
+        </div>
+       </div> 
+      <li><a href="gallerypage.html">Healthy Food</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="mylist.html">Leader Board</a></li>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="Feedback Form.html">Feedback</a></li>
+      
+      </ul>
+    </nav>
+  
+ 
+  
+  <div class="header">
+    <h4>ABOUT ME</h4>
+  </div>
+
+  <div class="left">
+    <img src="ama.jpeg" class="style2" alt="Photo of Me" width="250" height="250">
+  </div>
+
+  <br><br>
+
+  <div class="para">
+	<p>Welcome to MANS Fitness Website</p>
+	<p>I am Ama Athukorale.I am 20 years old.I schooled at St.Bridget's convent colombo.I am currently doing my degree of Artificial Intelligence and Data Science ar Informatics Institute of Technology which is affiliated with Robert Gordorn University.</p>
+	<p>According to my knowledge exercise has countless benefits. Of course, there’s the weight loss and muscle gains — the aesthetic changes that people tend to notice the most. Then, there’s the physiological advantages of better sleep, more energy, disease prevention and enhanced immunity. Finally comes the mental side — a boost in self-confidence, a new joy for life, and even a drive for stronger social connections. All of these powerful pay-offs can come from taking it just one step at a time.</p>
+  </div> 
+
+  <div class="para">
+	<p>I was a very lazy person for the longest time.I knew I had to do something as i was completely inactive and unfit.I started looking around to figure what options I have.My health goal was to get fit and active.Since I don't have time to go to gym most of the days,I finally decided to workout at home with the help of different fitness apps on the internet.Now I Workout for atleast two hours each day.And I am glad to say that I succeced in my goal..	
+	</p>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <div class="para1">
+    <p class="parafont"><br>HOBBIES<br></p>
+    <div class="edrow">
+      <div class="column">
+		  <img class="radius" src="Piano.jpg" alt="Piano" width="90%">
+      <p class="phobby">Playing a Piano</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="swimming-ama.jpg" alt="Swimming" width="90%">
+      <p class="phobby">Swimming</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="instagram-Ama.jpg" alt="Instagram" width="90%">
+      <p class="phobby">Browsing through Instagram</p>
+		</div>
+	  </div>
+	</div>
+  <br>
+
+  <footer>
+    <center>
+		<a href="https://www.instagram.com/ama_athukorale" target="_blank"><img src="insta.png" alt="Insta" width="5%" height="10%"></a>
+		<a href="https://web.snapchat.com/" target="_blank"><img src="snapchat.png" alt="Snap" width="5%" height="10%"></a>
+		<a href="https://pin.it/6llOmTP" target="_blank"><img src="pinterest.png" alt="pinterest" width="5%" height="10%"></a>	 
+    <hr>
+		<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+    </center>
+  </footer>
+  </div>
+  
+    
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="final.png">
+	<link rel="stylesheet" href="style-Student04.css">
+	
+	<title>Leadership Board</title>
+	
+</head>
+
+<body>
+	<div class="logo">
+		<a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+	</div>
+	<nav>
+		<ul>
+		  <li><a href="Signup.html">SignIn</a></li>    
+		  <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+			<div class="dropdown-content" id="myDropdown">
+			  <a href="supplements.html">Supplements</a>
+			  <a href="fitness accessories.html">Fitness Accesories</a>
+			  <a href="clothing.html">Clothing</a>
+			  <a href="MANS Fintness.html">MANS Products</a>
+			</div>
+		   </div> 
+		  <li><a href="gallerypage.html">Healthy Food</a></li>
+		  <li><a href="Quiz.html">Quiz</a></li>
+		  <li><a href="mylist.html">Leader Board</a></li>
+		  <li><a href="AboutUs.html">About us</a></li>
+		  <li><a href="Feedback Form.html">Feedback</a></li>
+		  
+		</ul>
+	  </nav>
+  
+		
+	<div class="row">
+		<div class="side">
+			<h7><b>FontColour</b></h7>
+		<select id="fontcolor" onchange="FontColourchange()">
+			<option value="#000000"></option>
+			<option value="#00FFFF">Aqua</option>
+			<option value="#6495ED">Cornflower Blue</option> 
+			<option value="#00FFFF">Cyan</option>
+			<option value="#ADD8E6">Light Blue</option>
+			<option value="#A7C7E7">Pastel Blue</option>
+			<option value="#008080">Teal</option>
+			<option value="#000080">Navy Blue</option>
+		</select>
+		  <h4><em>User Feedbacks</em></h4>
+		  <p class="pfeedback">Emma:<i>MANS has been a game changer for me. A year back when I started my
+		   fitness journey, I didn't know the right platform to start in order to be consistent with it. 
+		   That was when my friend suggested this site. Looking back now, its definitely the best decision I made!</i>
+		   <br>  
+		   <em>Rating:Excellent</em>
+		
+		 </p>
+		 <br>
+		 <p class="pfeedback">Sylvia:<i>I am still a fresher to this site, but have had many people recommend this to me,
+			and so far, it has been amazing and is very helpful. This weekly quizes increases the interactivness between the fellow
+			users to see who makes it to the leader board. I truly enjoy this site and it is surely helping me to accomplish my aim.</i>
+			<br>  
+			<em>Rating:Good</em>
+			
+		  </p>
+		  <br>
+		  <p class="pfeedback">John:<i>Amazing site, with really good features! They could improve by increasing the shipment of products to 
+			more countries. The recipes are really helpful to help design the menu, they could provide some innovative recipes too! Overall,
+			it is a pretty good site!
+		  </i>
+			<br>
+			<em>Rating:Fair</em>
+		  </p>
+		  <br>
+		  <p class="pfeedback">Yusuf:<i>LOVE IS AN UNDERSTATEMENT,cause this site is so AMAZING!!!!! Would recommend this to everyone.
+			So glad I came across this site! It has definietly helped me mold a better version of myself through the fitness journey,
+			and they've got THE BEST PRODUCTS. JUST LOVE THIS SITE!!
+		  </i>
+			<br> 
+			<em>Rating:Excellent</em> 
+			
+		  </p>
+		  <br>
+		  <p class="pfeedback">Nicholas:<i>A very good site for anyone starting on their fitness journey, it has very useful
+			features, that helps the users to be consistent on this. My personal favourite of this site is, THE PRODUCTS, cause 
+			they are amazing and very reasonable cost.
+		  </i>
+			<br>  
+			<em>Rating:Fair</em>
+		  </p>
+		  <br>
+		  <p class="pfeedback">Peter:<i>AMAZING SITE, Love it!</i>
+			<br>  
+			<em>Rating:Good</em>
+
+		</div>
+
+		<div class="main">
+			<h7><b>BackgroundColor</b></h7>
+                <select id="bgcolor" onchange="BackgroundColorchange()">
+					<option value="FFFFFF"></option>
+					<option value="#00FFFF">Aqua</option>
+					<option value="#6495ED">Cornflower Blue</option> 
+					<option value="#00FFFF">Cyan</option>
+					<option value="#ADD8E6">Light Blue</option>
+					<option value="#A7C7E7">Pastel Blue</option>
+					<option value="#008080">Teal</option>
+					<option value="#000080">Navy Blue</option>
+                </select>
+			<br><br><br>
+			<center>
+				<p class="cap">LEADER BOARD</p>
+			</center>
+			<table id="leaderboard">
+				<thead>
+				  <tr>
+					<th>Rank</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Points</th>
+				  </tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<center><p class="quiz">Want to make it to the leaderboard? Go try our <a href="Quiz.html">Quiz</a></p></center>
+		</div>
+	  </div>
+	  <div class="news">
+		<p class="newsmain">JOIN THE BUNCH</p>
+		<h10><em>Want to get instant updates on our offers and special promotions? Sign up to our newsletter now!</em> </h10>
+        <p ><a href="Newsletter.html">SUBSCRIBE</a></p>
+	  </div>
+
+	  <footer>
+		<center><a href="Stud_04_Editor.html">EDITOR</a>
+		<hr>
+		<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+		</center>
+	  </footer>
+	  <script>
+		var leaderboardData = [
+	"<leader><board><rank>1</rank><firstName>David</firstName><lastName>Holland</lastName><points>400</points></board></leader>",
+	"<leader><board><rank>2</rank><firstName>Nethra</firstName><lastName>Illancheliyan</lastName><points>350</points></board></leader>",
+	"<leader><board><rank>3</rank><firstName>Katy</firstName><lastName>Noefield</lastName><points>320</points></board></leader>",
+	"<leader><board><rank>4</rank><firstName>Eo</firstName><lastName>Sam</lastName><points>300</points></board></leader>",
+	"<leader><board><rank>5</rank><firstName>Tommy</firstName><lastName>Bala</lastName><points>290</points></board></leader>",
+	"<leader><board><rank>6</rank><firstName>Williams</firstName><lastName>Alexander</lastName><points>240</points></board></leader>",
+	"<leader><board><rank>7</rank><firstName>Mohammed</firstName><lastName>Khan</lastName><points>210</points></board></leader>",
+	"<leader><board><rank>8</rank><firstName>Vighashini</firstName><lastName>Kugan</lastName><points>190</points></board></leader>",
+	"<leader><board><rank>9</rank><firstName>Zaina</firstName><lastName>Mulafer</lastName><points>180</points></board></leader>",
+	"<leader><board><rank>10</rank><firstName>Richard</firstName><lastName>Steveson</lastName><points>150</points></board></leader>",
+	"<leader><board><rank>11</rank><firstName>Aamina</firstName><lastName>Faizer</lastName><points>145</points></board></leader>",
+	"<leader><board><rank>12</rank><firstName>Kenny</firstName><lastName>Sebastian</lastName><points>135</points></board></leader>",
+	"<leader><board><rank>13</rank><firstName>Tao</firstName><lastName>Ting</lastName><points>120</points></board></leader>",
+	"<leader><board><rank>14</rank><firstName>Xin</firstName><lastName>Jing</lastName><points>110</points></board></leader>",
+	"<leader><board><rank>15</rank><firstName>Shravan</firstName><lastName>Kapoor</lastName><points>100</points></board></leader>"
+     ];
+	 
+	 var table = document.getElementById('leaderboard').getElementsByTagName('tbody')[0];
+	 for (var i = 0; i < leaderboardData.length; i++) {
+		var board = new DOMParser().parseFromString(leaderboardData[i], "text/xml");
+		var rank = board.getElementsByTagName("rank")[0].childNodes[0].nodeValue;
+		var firstName = board.getElementsByTagName("firstName")[0].childNodes[0].nodeValue;
+		var lastName = board.getElementsByTagName("lastName")[0].childNodes[0].nodeValue;
+		var points = board.getElementsByTagName("points")[0].childNodes[0].nodeValue;
+		var row = table.insertRow(-1);
+		var rankCell = row.insertCell(0);
+		var firstNameCell = row.insertCell(1);
+		var lastNameCell = row.insertCell(2);
+		var pointsCell = row.insertCell(3);
+		rankCell.innerHTML = rank;
+		firstNameCell.innerHTML = firstName;
+		lastNameCell.innerHTML = lastName;
+		pointsCell.innerHTML = points;
+	}
+	
+	function BackgroundColorchange()
+	{ 
+		document.body.style.backgroundColor = document.getElementById("bgcolor").value;
+	}
+	function FontColourchange() 
+	{
+		document.body.style.color = document.getElementById("fontcolor").value;;
+	}
+	function myFunction() 
+	{
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	window.onclick = function(e) {
+		if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+			}
+		}
+	}
+		
+	</script>
+</body>
+
+
+</html>

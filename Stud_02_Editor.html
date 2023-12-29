@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ <title> Editor's page </title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/x-icon" href="final.png">
+ <link rel="stylesheet" href="Editor.css">
+</head>
+<script>
+  function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+				}
+			}
+		}
+</script>
+
+<body>
+  <div class="bgcolor">
+    <div class="logo">
+      <a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+    </div>
+    <nav>
+      <ul>
+      <li><a href="Signup.html">SignIn</a></li>    
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+        <div class="dropdown-content" id="myDropdown">
+        <a href="supplements.html">Supplements</a>
+        <a href="fitness accessories.html">Fitness Accesories</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="MANS Fintness.html">MANS Products</a>
+        </div>
+       </div> 
+      <li><a href="gallerypage.html">Healthy Food</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="mylist.html">Leader Board</a></li>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="Feedback Form.html">Feedback</a></li>
+      
+      </ul>
+    </nav>
+  
+ 
+  
+  <div class="header">
+    <h4>ABOUT ME</h4>
+  </div>
+
+  <div class="left">
+    <img src="Neri.jpg" class="style2" alt="Photo of Me" width="250" height="250">
+  </div>
+
+  <br><br>
+
+  <div class="para">
+    <p>Welcome to <em>MANS</em>.I am Neri Meneripitiyage, I am 20 years old.
+      I schooled at St.Bridget's Convent and completed my high school studies in 2022. I am currently doing
+      my degree of Artifical Intelligence and Data Science at Informatics Institute of Technology which is affliated with 
+      the Robert Gordon University situated in Scottland,UK. This website is created by my friends and I for our Web Technology CourseWork, which
+      is regarding <i>Fitness and Health</i>. I'd like to share my thoughts with you...
+	  </p>
+  </div> 
+
+  <div class="para">
+    <p> If a machine is treated with care and properly maintained it is more likely to function efficiently. The human body too is like a machine only 
+      far more advanced. So similarly the human body is most likely to function to the best of its ability. If it’s kept fit and healthy. We must be 
+      able to make the best use of our bodies in order to work hard. We are happy only when we enjoy good health. </p>
+  </div>
+
+  <div class="para">
+    <p>Improving your health and fitness will teach you hard work, consistency, and patience. Your body can stand almost anything and it’s your mind 
+      that you have to convince. I believe fitness will help your body change in a week, but you can build the habits that will change your life. 
+      Always keep in mind that exercise is a celebration of what your body can do and not a punishment for what you are. Good luck!</p>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <div class="para1">
+    <p class="parafont"><br>HOBBIES<br></p>
+    <div class="edrow">
+      <div class="column">
+		  <img class="radius" src="chess.jpg" alt="Piano" width="90%">
+      <p class="phobby">Playing Chess</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="swimmimg-neri.jpg" alt="Swimming" width="90%">
+      <p class="phobby">Swimming</p>
+		</div>
+		<div class="column">
+		  <img class="radius" src="reading.jpg" alt="Instagram" width="90%">
+      <p class="phobby">Reading</p>
+		</div>
+	  </div>
+	</div>
+  <br>
+
+  <footer>
+    <center>
+      <a href="https://www.instagram.com/neriandria/" target="_blank"><img src="insta.png" alt="Insta" width="5%" height="10%"></a>
+      <a href="https://web.snapchat.com/neriandria/" target="_blank"><img src="snapchat.png" alt="Snap" width="5%" height="10%"></a>
+      <a href="https://www.pinterest.com/neriandria/" target="_blank"><img src="pinterest.png" alt="pinterest" width="5%" height="10%"></a>
+    <hr>
+		<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+    </center>
+  </footer>
+  </div>
+  
+    
+</body>
+</html>

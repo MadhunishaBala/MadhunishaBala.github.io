@@ -1,0 +1,115 @@
+<!doctype html>
+   <html lang="en">
+	<head>
+	    <title>Feedback Form</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="final.png">
+		<link href="new.css" rel="stylesheet">
+		
+	</head>
+	<body>
+		<div class="logo">
+			<a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="Signup.html">SignIn</a></li>    
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="supplements.html">Supplements</a>
+						<a href="fitness accessories.html">Fitness Accesories</a>
+						<a href="clothing.html">Clothing</a>
+						<a href="MANS Fintness.html">MANS Products</a>
+					</div>
+				</div> 
+				<li><a href="gallerypage.html">Healthy Food</a></li>
+				<li><a href="Quiz.html" target="blank">Quiz</a></li>
+				<li><a href="mylist.html">Leader Board</a></li>
+				<li><a href="AboutUs.html">About us</a></li>
+				<li><a href="Feedback Form.html">Feedback</a></li>
+			</ul>
+		</nav>
+		<br>
+		<h1>Send <br> us your<br> feedback</h1>
+		<div class="feedback">
+			<form id="feedback" method="GET" target="_blank">
+				<fieldset>
+					<legend><b>Feedback</b></legend>
+					<label for="name">Enter Your Name</label><br>
+					<input id="name" type="text" name="name"><br>
+					<br>
+					<label for="email">Enter Your Email Address</label><br>
+					<input  id="email"type="text" id="email" name="email"><br>
+					<br>
+					<label for="comments">Enter Your Comment/s</label><br>
+					<input  id="comments"type="text" name="comments"><br>
+					<br>
+					<label for="rating">Rate Us</label>
+					<select id="rating" name="rating" required>
+						<option value="">--Please choose an option--</option>
+						<option value="excellent">Excellent</option>
+						<option value="good">Good</option>
+						<option value="fair">Fair</option>
+						<option value="poor">Poor</option>
+					</select>
+					<br><br><br><br><br><br><br><br>
+					<div< class="clearfix">
+						<button type="reset" class="resetbtn"><b>Reset</b></button>
+						<button type="submit" class="submitbtn"><b>Submit</b></button><br>
+					</div>
+				</div>
+			</fieldset>		
+		</form>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<footer>
+			<center><a href="Stud_02_Editor.html">EDITOR</a>
+				<hr>
+				<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+			</center>
+		</footer>
+		
+		
+		<script>
+			function myFunction() {
+			   document.getElementById("myDropdown").classList.toggle("show");
+		   }
+		   window.onclick = function(e) {
+			   if (!e.target.matches('.dropbtn')) {
+				   var myDropdown = document.getElementById("myDropdown");
+				   if (myDropdown.classList.contains('show')) {
+					   myDropdown.classList.remove('show');
+				   }
+			   }
+		   }
+		   
+		   const form = document.getElementById("feedback");
+		   form.addEventListener("submit", function(event) {
+		   // prevent the form from submitting
+		   event.preventDefault();
+		   // check if the required fields are filled in
+		   const name = document.getElementById("name").value;
+		   const email = document.getElementById("email").value;
+		   const comments = document.getElementById("comments").value;
+		   const rating = document.getElementById("rating").value;
+		   if (!/\S+@\S+\.\S+/.test(email)) {
+				alert("Please enter a valid email address.");
+				return false;
+			}
+
+		   if (name === "" || comments === "" || rating ==="" ){
+		   alert("Please fill in all required fields.");
+		   }else{
+			
+			const message = `Dear ${name}, Thank you very much for your feedback. You have rated us ${rating} and your comment was ${comments}.`;
+		   alert(message)};
+		   
+		   
+   
+		   });  
+		</script>
+	</body>
+	
+	
+</html>

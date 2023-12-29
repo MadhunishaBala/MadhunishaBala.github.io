@@ -1,0 +1,78 @@
+<!doctype html>
+   <html lang="en">
+	<head>
+	     <title>Main Page</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="icon" type="image/x-icon" href="final.png">
+		 <link href="new.css" rel="stylesheet">
+		 <script>
+		  function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		  }
+		  window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+				}
+			}
+		   }
+		 </script>
+	</head> 
+	<body>
+		<div class="logo">
+			<a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+		</div>
+		<nav>
+			<ul>
+			  <li><a href="Signup.html">SignIn</a></li>    
+			  <div class="dropdown">
+				<button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+				<div class="dropdown-content" id="myDropdown">
+				  <a href="supplements.html">Supplements</a>
+				  <a href="fitness accessories.html">Fitness Accesories</a>
+				  <a href="clothing.html">Clothing</a>
+				  <a href="MANS Fintness.html">MANS Products</a>
+				</div>
+			   </div> 
+			  <li><a href="gallerypage.html">Healthy Food</a></li>
+			  <li><a href="Quiz.html">Quiz</a></li>
+			  <li><a href="mylist.html">Leader Board</a></li>
+			  <li><a href="AboutUs.html">About us</a></li>
+			  <li><a href="Feedback Form.html">Feedback</a></li>
+			  
+			</ul>
+		  </nav>
+	  
+		
+	  <br><br><br><br>
+	  <div class="div-1">
+			<p ><img src="mainpicture.jpeg" alt="offers" style="width:300px;height:315px;margin-right:15px;"><br><br><br></p>
+			<div class="text">
+			<br>	
+			<p ><h2>Hello there!</h2></p>
+			<p><strong>
+				Welcome to our fitness website, where we work to support people in reaching their fitness 
+				objectives and leading healthier lives. Our website is made to offer a wide variety of tools to assist 
+				you in your quest for fitness, including exercise plans, dietary advice, and professional opinion.
+				We know that beginning a workout plan can be difficult, which is why we've made it our purpose to offer 
+				accessible and interesting content to get you going. Our website contains everything you need to get 
+				started, whether your goal is to get in better shape, lose weight, or both.
+			</strong></p>
+			<p><strong>
+				According to our definition, fitness encompasses both physical and mental health. 
+				To assist you, we have included a range of materials.
+			</strong></p>
+		</div>
+		</div>
+	    </div>		 
+        <br><br><br><br><br><br>		
+		<footer>
+		<center>
+			<a href="Stud_02_Editor.html">EDITOR</a>
+			<hr>
+			<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+		</center>
+	    </footer>	 	
+	</body> 		 
+</html>

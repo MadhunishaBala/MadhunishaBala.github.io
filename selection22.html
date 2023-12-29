@@ -1,0 +1,154 @@
+<!doctype html>
+   <html lang="en">
+      <head>
+	  <link  rel="stylesheet" href="style.css">
+	  <meta charset = "utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="icon" type="image/x-icon" href="final.png">
+	  <title>Selection</title>
+	  <script>
+	  function validateForm() {
+	  const activityLevelCheckboxes = document.getElementsByName("activity level");
+	  const physicalActivitiesCheckboxes = document.getElementsByName("pact");
+	  const foodIntakeCheckboxes = document.getElementsByName("food intake");
+	  const goalsCheckboxes = document.getElementsByName("goals");
+	
+	  if (!checkIfAtleastOneBoxisTicked(activityLevelCheckboxes)) {
+		alert("Please select your activity level.");
+		return false;
+	  }
+	  if (!checkIfAtleastOneBoxisTicked(physicalActivitiesCheckboxes)) {
+		alert("Please select the physical activities you prefer.");
+		return false;
+	  }
+	  if (!checkIfAtleastOneBoxisTicked(foodIntakeCheckboxes)) {
+		alert("Please select your food intake type.");
+		return false;
+	  }
+	  if (!checkIfAtleastOneBoxisTicked(goalsCheckboxes)) {
+		alert("Please select your goals.");
+		return false;
+	  }
+	
+	  var firstName = localStorage.getItem("firstName");
+	  alert("Thank you " + firstName + " for submitting your form.");
+	  return true;
+	}
+	
+	function checkIfAtleastOneBoxisTicked(checkboxes) {
+	  for (let i = 0; i < checkboxes.length; i++) {
+		if (checkboxes[i].checked) {
+		  return true;
+		}
+	  }
+	  return false;
+	}
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	window.onclick = function(e) {
+		if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+			}
+		}
+	}
+	</script>  
+	</head>
+	<body>
+		<div class="bgimg">
+			<div class="logo">
+				<a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+			</div>
+			<nav>
+				<ul>
+				  <li><a href="Signup.html">SignIn</a></li>    
+				  <div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+					<div class="dropdown-content" id="myDropdown">
+					  <a href="supplements.html">Supplements</a>
+					  <a href="fitness accessories.html">Fitness Accesories</a>
+					  <a href="clothing.html">Clothing</a>
+					  <a href="MANS Fintness.html">MANS Products</a>
+					</div>
+				   </div> 
+				  <li><a href="gallerypage.html">Healthy Food</a></li>
+				  <li><a href="Quiz.html">Quiz</a></li>
+				  <li><a href="mylist.html">Leader Board</a></li>
+				  <li><a href="AboutUs.html">About us</a></li>
+				  <li><a href="Feedback Form.html">Feedback</a></li>
+				  
+				</ul>
+			  </nav>
+		  
+		
+			<h4>Let us know how we can help you</h4>
+			<div class="select">
+				<p id ="level">Please select your activity level :</p>
+				<input type="checkbox" id="a1" name="activity level" value="act">
+				<label for="a1"> Sedentary</label><br>
+				<input type="checkbox" id="a2" name="activity level" value="act">
+				<label for="a2">Lightly Active </label><br>
+				<input type="checkbox" id="a3" name="activity level" value="act">
+				<label for="a3">Moderately Active </label><br>
+				<input type="checkbox" id="a4" name="activity level" value="act">
+				<label for="a4"> Very Active</label><br>
+				<br>
+			</div>
+			<div class="select">
+				<p id ="level" > Please select the physical activities you prefer :</p>
+				<input type="checkbox" id="p1" name="pact" value="Cardi">
+				<label for="p1"> Cardiovascular Excercise</label><br>
+				<input type="checkbox" id="p2" name="pact" value="ste">
+				<label for="p2"> Strength Training Exercises</label><br>
+				<input type="checkbox" id="p3" name="pact" value="yoga">
+				<label for="p3"> Yoga and stretching</label><br>
+				<input type="checkbox" id="p4" name="pact" value="ste">
+				<label for="p4"> Strength Training Exercises</label><br>
+				<input type="checkbox" id="p5" name="pact" value="HIIT">
+				<label for="p5">High-Intensity Interval Training </label><br>
+				<br>
+			</div>
+			<div class="select">
+				<p id ="level"> Please select your food intake type :</p>
+				<input type="checkbox" id="fd1" name="food intake" value="fruits and vegetables">
+				<label for="fd1"> Fruits and Vegetables</label><br>
+		        <input type="checkbox" id="fd2" name="food intake" value="Starchy Food">
+		        <label for="fd2"> Starchy Food</label><br>
+				<input type="checkbox" id="fd3" name="food intake" value="Dairy">
+				<label for="fd3"> Dairy</label><br>
+				<input type="checkbox" id="fd4" name="food intake" value="Protein">
+				<label for="fd4"> Protein</label><br>
+				<input type="checkbox" id="fd5" name="food intake" value="Fat">
+				<label for="fd5"> Fat</label><br>
+				<br>
+			</div>
+			
+			<div class="select">
+				<p id ="level"> Please select your goals :</p>
+				<input type="checkbox" id="g1" name="goals" value="SM">
+				<label for="g1"> Strengthen Muscle</label><br>
+				<input type="checkbox" id="g2" name="goals" value="burn fat">
+				<label for="g2"> Burn Fat</label><br>
+				<input type="checkbox" id="g3" name="goals" value="Become flex">
+				<label for="g3"> Become Flexible</label><br>
+				<br>
+			</div>
+			<br>
+			<div class="clearfix">
+				<button type="button" class="submit" onclick="if(validateForm())window.location.href='gallerypage.html'"><b>Submit</b></button>
+			</div>
+			<br><br>
+			<footer>
+				<center><a href="Stud_01_Editor.html" target="_blank">EDITOR</a>
+				<hr>
+				<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+				</center>
+			</footer> 
+		</div>
+	</body>
+</html>
+		  
+		  
+		  

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Healthy Recipes Gallery</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="final.png">
+	<link  rel="stylesheet" href="style.css">
+	<script>
+		function displayDetails(details) {
+		  
+		  const displayedImage = document.getElementById("displayed-image");
+		  const displayedTitle = document.getElementById("displayed-title");
+		  const displayedDetails = document.getElementById("displayed-details");
+		
+		  
+		  const clickedImage = event.target;
+		  const clickedSrc = clickedImage.getAttribute("src");
+		  const clickedAlt = clickedImage.getAttribute("alt");
+		
+		  
+		  displayedImage.setAttribute("src", clickedSrc);
+		  displayedTitle.innerText = clickedAlt;
+		
+		  
+		  displayedDetails.innerText = details;
+		}
+		
+		function myFunction() {
+					document.getElementById("myDropdown").classList.toggle("show");
+				}
+				window.onclick = function(e) {
+					if (!e.target.matches('.dropbtn')) {
+						var myDropdown = document.getElementById("myDropdown");
+						if (myDropdown.classList.contains('show')) {
+							myDropdown.classList.remove('show');
+						}
+					}
+				}
+		
+		
+		</script>
+  </head>
+  
+  <body>
+  <div class="bgcolor">
+      <div class="logo">
+		<a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+	</div>
+	<nav>
+		<ul>
+		  <li><a href="Signup.html">SignIn</a></li>    
+		  <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+			<div class="dropdown-content" id="myDropdown">
+			  <a href="supplements.html">Supplements</a>
+			  <a href="fitness accessories.html">Fitness Accesories</a>
+			  <a href="clothing.html">Clothing</a>
+			  <a href="MANS Fintness.html">MANS Products</a>
+			</div>
+		   </div> 
+		  <li><a href="gallerypage.html">Healthy Food</a></li>
+		  <li><a href="Quiz.html">Quiz</a></li>
+		  <li><a href="mylist.html">Leader Board</a></li>
+		  <li><a href="AboutUs.html">About us</a></li>
+		  <li><a href="Feedback Form.html">Feedback</a></li>
+		  
+		</ul>
+	  </nav>
+  
+		
+		<h2>Healthy Recipes Gallery</h2>
+    
+    <div class="gallery">
+      <div>
+        <img class="recipe-img" src="HR1.WEBP" alt="Burrito bowl with chipotle black beans" onmouseover="displayDetails('This healthy burrito bowl is chock full of veggies and greens, perfect for a filling lunch. This is one vegetarian meal that tastes just as good as it looks.Cook the rice following pack instructions, then drain and return to the pan to keep warm. In a frying pan, heat the oil, add the garlic and fry for 2 mins or until golden. Add the beans, vinegar, honey and chipotle. Season and warm through for 2 mins.Boil the kale for 1 min, then drain, squeezing out any excess water. Divide the rice between big shallow bowls and top with the beans, kale, avocado, tomato and onion. Serve with hot sauce, coriander and lime wedges, if you like.')">
+        <p class="recipe-desc">Burrito bowl with chipotle black beans</p>
+      </div>
+      
+      <div>
+        <img class="recipe-img" src="HR2.WEBP" alt="Pulled chicken salad" onmouseover="displayDetails('Pull apart a ready-roasted chicken to whip up this healthy, vibrant, low-calorie dish in just 20 minutes.Firstly add hoisin sauce and toasted sesame oil in a small bowl and set aside.Remove all the meat from the chicken, shred into large chunks and pop in a large bowl. Add the cabbage, carrots, spring onions, chillies and half the coriander. Toss together with the dressing and pile onto a serving plate, then scatter over the remaining coriander and peanuts.')">
+        <p class="recipe-desc">Pulled chicken salad</p>
+      </div>
+      
+      <div>
+        <img class="recipe-img" src="HR3.WEBP" alt="Chickpea soup" onmouseover="displayDetails('For something hearty and warming with aromatic spice, this chickpea soup is an easy winner.Heat the oil in a large saucepan, then fry the onion and celery gently for 10 mins until softened,stirring frequently. Tip in the cumin and fry for another min.Turn up the heat, then add the stock, tomatoes and chickpeas, plus a good grind of black pepper. Simmer for 8 mins. Throw in broad beans and lemon juice, cook for a further 2 mins. Season to taste, then top with a sprinkling of lemon zest and chopped herbs. Serve with flatbread.')">
+        <p class="recipe-desc">Chickpea soup</p>
+      </div>
+      
+      <div>
+        <img class="recipe-img" src="HR4.WEBP" alt="Superhealthy salmon salad"  onmouseover="displayDetails('Superhealthy by name, superhealthy by nature: this salad is high in omega-3, iron and calcium and counts as 2 of your 5-a-day.Heat water in a tier steamer. Season the couscous, then toss with 1 tsp oil. Pour boiling water over the couscous so it covers it by 1cm, then set aside. When the water in the steamer comes to the boil, tip the broccoli into the water, then lay the salmon in the tier above. Cook for 3 mins until the salmon is cooked and the broccoli tender. Drain the broccoli and run it under cold water to cool.Mix together the remaining oil and lemon juice. Toss the broccoli, pomegranate seeds and pumpkin seeds through the couscous with the lemon dressing. At the last moment, roughly chop the watercress and toss through the couscous. Serve with the salmon, lemon wedges for squeezing over and extra olive oil for drizzling, if you like.')">
+        <p class="recipe-desc">Superhealthy salmon salad</p>
+      </div>
+      
+      <div>
+        <img class="recipe-img" src="HR6.WEBP" alt="Air fryer baked potatoes" onmouseover="displayDetails('Try baking potatoes in an air fryer to achieve a crisp skin with a fluffy centre. The process is quicker and can be more energy-efficient than using the oven.Scrub the potatoes, then pat dry with kitchen paper. Transfer to a plate, drizzle over the oil and rub it into the skins using your hands so the potatoes are well-coated. Season with salt and pepper – the salt will help the skins crisp up.Arrange the potatoes in a single layer in an air fryer basket. Set the air fryer to 200C and cook for 40-50 mins, or until a sharp knife goes through the potatoes easily. Check the potatoes after 20 mins – if they seem to be browning too quickly on one side, turn them over using tongs, then check again after another 20 mins to ensure they are cooked through. When ready, the skin should be crisp and the inside tender and fluffy. Split and serve immediately with the toppings of your choice.')">
+        <p class="recipe-desc">Air fryer baked potatoes</p>
+      </div>
+      </div>
+	  <div class="gallery-display">
+		<img id="displayed-image" src=""> 
+		<h2 id="displayed-title"></h2>
+		<p id="displayed-details"></p>
+	</div>
+			
+	<footer>
+		<center><a href="Stud_01_Editor.html">EDITOR</a>
+		<hr>
+		<p class="font"><em>Terms of use &nbsp; &nbsp; Privacy Policy </em></p>
+		</center>
+	  </footer>   
+	</div>
+</body>
+</html>

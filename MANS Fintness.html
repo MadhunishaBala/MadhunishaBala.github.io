@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel = "stylesheet" href="Sam-Clothing.css"/>
+	<title>MANS PRODUCTS</title>
+	<link rel="icon" type="image/x-icon" href="final.png">
+	<script src="https://kit.fontawesome.com/cd50613dda.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <script>
+	   function myFunction() {
+		   document.getElementById("myDropdown").classList.toggle("show");
+	   }
+	   window.onclick = function(e) {
+		   if (!e.target.matches('.dropbtn')) {
+			   var myDropdown = document.getElementById("myDropdown");
+			   if (myDropdown.classList.contains('show')) {
+				   myDropdown.classList.remove('show');
+			   }
+		   }
+	   }
+   </script>
+</head>
+<body>
+	
+	<div class="logo">
+		<a href="mainpage.html"> <img src="final.png" alt="logo" width="70px" height="64px"></a>
+  </div>
+  <nav>
+	<ul>
+	  <li><a href="Signup.html">SignIn</a></li>    
+	  <div class="dropdown">
+		<button class="dropbtn" onclick="myFunction()">Online Store &#8595</button>
+		<div class="dropdown-content" id="myDropdown">
+		  <a href="supplements.html">Supplements</a>
+		  <a href="fitness accessories.html">Fitness Accesories</a>
+		  <a href="clothing.html">Clothing</a>
+		  <a href="MANS Fintness.html">MANS Products</a>
+		</div>
+	   </div> 
+	  <li><a href="gallerypage.html">Healthy Food</a></li>
+	  <li><a href="Quiz.html">Quiz</a></li>
+	  <li><a href="mylist.html">Leader Board</a></li>
+	  <li><a href="AboutUs.html">About us</a></li>
+	  <li><a href="Feedback Form.html">Feedback</a></li>
+	  
+	</ul>
+  </nav>
+
+	
+		
+
+		<section class="Products">
+			<br>
+			<br>
+			<h2>MANS FITNESS PRODUCTS</h2>
+			<br>
+			<br>
+			<button class ="button1"onclick="changeFontSize('increase')">Increase Font Size</button>
+			<br>
+			<button class ="button2" onclick="changeFontSize('decrease')">Decrease Font Size</button>
+			<br>
+			
+
+	
+		<!--products-->
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class=" all-products">
+			<div class="product">
+				<img src="shakerbottle.png" width="175" height="175">
+				<div class="product-info">
+					<h4 class="product-title">MANS Shaker Bottle</h4>
+						<p class="product-price">$15.69</p>
+						<p>QUANTITY:
+							<input class = input3 id="product1" type="number" name="quantity" min="0" style="color:black"></P>
+						<button class="addcart" type="button" onclick="order1()">&#128722; Add To Cart </button>
+				</div>
+			</div>
+			<div class="product">
+				<img src="hat.png" width="175" height="175">
+				<div class="product-info">
+					<h4 class="product-title"> MANS Bucket Hat</h4>
+						<p class="product-price">$9.99</p>
+						<p>QUANTITY:
+							<input class = "input3" id="product2" type="number" name="quantity" min="0" style="color:black"></P>
+						<button class="addcart" type="button" onclick="order2()">&#128722; Add To Cart </button>
+				</div>
+			</div>						
+			<div class="product">
+				<img src="socks.png" width = "160" height="160">
+				<div class="product-info">
+					<h4 class="product-title">MANS Compression Socks</h4>
+						<p class="product-price">$35.00</p>
+						<p>QUANTITY:
+							<input class = "input3" id="product3" type="number" name="quantity" min="0" style="color:black"></P>
+						<button class="addcart" type="button" onclick="order3()">&#128722; Add To Cart </button>
+						
+				</div>
+			</div>
+				<div class="product">
+					<img src="hoodie.png" width="157" height="157">
+					<div class="product-info">
+						<h4 class="product-title">MANS Hoodie </h4>
+							<p class="product-price">$50.76</p>
+							<p> QUANTITY:
+								<input class = "input3" id="product4" type="number" name="quantity" min="0" style="color:black"></P>
+							<button class="addcart" type="button" onclick="order4()">&#128722; Add To Cart </button>
+					</div>
+				</div>
+				<div class="product">
+					<img src="cover.png" width ="145" height="145">
+					<div class="product-info">
+						<h4 class="product-title">MANS Phone Cover</h4>
+							<p class="product-price">$32.00</p>
+							<p>QUANTITY:
+								<input class = "input3" id="product5" type="number" name="quantity" min="0" style="color:black"></P>
+						<button class="addcart" type="button" onclick="order5()">&#128722; Add To Cart </button>
+					</div>
+				</div>
+				<div class="product">
+					<img src="bag.png" width="160" height="160">
+					<div class="product-info">
+						<h4 class="product-title">MANS Duffel Bag </h4>
+							<p class="product-price">$50.00</p>
+							<p>QUANTITY:
+								<input class = "input3" id="product6" type="number" name="quantity" min="0" style="color:black"></P>
+						<button class="addcart" type="button" onclick="order6()">&#128722; Add To Cart </button>
+							
+					</div>
+				</div>
+	</div>
+	</section>
+	<br>
+	<br>
+	<div class="details">
+		<form name="form1" onsubmit="return validate()">
+			<h4>PERSONAL DETAILS</h4>
+		  <input name="name" id="name" placeholder="Name" required="" type="text" />
+		  <input name="customerEmail" id="email" placeholder="Email" type="email" />
+		  <input name="customerPhone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" type="tel" />
+		  <input name="Address" id="address" placeholder="Address" type="text">
+		  <button class="button1" type="button">SUBMIT</button>
+	
+	
+		</div>
+
+
+	<br>
+			<br>
+			<br>
+			<br>
+
+	<div class="order">
+		<div class="orderbutton">
+			<br>
+			<input class ="input1" type="submit" value="Order" class="purchase">
+			<br>
+			<input class ="input2" type="reset" value="Reset" class="reset">
+			<br>
+		</div>
+	</div>
+	</form>
+
+
+
+		
+	<script>
+		var p1price;
+          var p2price;
+          var p3price;
+          var p4price;
+          var p5price;
+          var p6price;
+          var price = [];
+          var quantity = [];
+          var product = [];
+          var price = [];
+          var msg = [];
+
+		  function validate() {
+			var x = document.forms["form1"]["name"].value;
+			var y = document.forms["form1"]["customerPhone"].value;
+			var z = document.forms["form1"]["Address"].value;
+			var a = document.forms["form1"]["customerEmail"].value;
+
+  if (x == "") {
+    alert("Name section needs to be filled");
+    return false;
+  }
+  if (y == "") {
+    alert("Phone No section needs to be filled");
+    return false;
+  }
+  if (z == "") {
+    alert("Address section needs to be filled");
+    return false;
+  }
+  if (a == "") {
+    alert("Email section needs to be filled");
+    return false;
+  }
+  var total = 0;
+  var i;
+  var name = document.getElementById("name").value;
+  var summaryMsg = " ";
+
+  for (i = 0; i < product.length; i++) {
+    var lineMsg = name + " has purhcased " + quantity[i] + " of " + product[i] + " which sums up to $" + price[i] + "\n";
+    summaryMsg +=  lineMsg;
+    total += price[i];
+  }
+
+  
+  summaryMsg += "Your total bill is: $ " + total.toFixed(2);
+  window.alert(summaryMsg);
+}
+		
+function changeFontSize(direction) {
+			var elements = document.querySelectorAll('body *');
+
+			elements.forEach(function(element) {
+				var fontSize = window.getComputedStyle(element).fontSize;
+				var currentSize = parseFloat(fontSize);
+				var newSize;
+
+				if (direction === 'increase') {
+					newSize = currentSize + 1;
+				} else if (direction === 'decrease') {
+					newSize = currentSize - 1;
+				}
+
+				element.style.fontSize = newSize + 'px';
+			});
+		}
+		function order1(){
+			p1price=document.getElementById('product1').value*15.69;	
+			window.alert(document.getElementById('product1').value+" MANS Shaker Bottle is added to your cart. $"+p1price);
+			quantity.push(document.getElementById('product1').value);
+			product.push("MANS Shaker Bottle");
+			price.push(p1price);
+		}
+		function order2(){
+			p2price=document.getElementById('product2').value*9.99;	
+			window.alert(document.getElementById('product2').value+" MANS Bucket Hat is added to your cart. $"+p2price);
+			quantity.push(document.getElementById('product2').value);
+			product.push("MANS Bucket Hat");
+			price.push(p2price);
+		}
+		function order3(){
+			p3price=document.getElementById('product3').value*35.00;	
+			window.alert(document.getElementById('product3').value+" MANS Compression Socks is added to your cart. $"+p3price);
+			quantity.push(document.getElementById('product3').value);
+			product.push("MANS Active Wear");
+			price.push(p3price);
+		}
+		function order4(){
+			p4price=document.getElementById('product4').value*50.76;	
+			window.alert(document.getElementById('product4').value+" MANS Hoodie is added to your cart. $"+p4price);
+			quantity.push(document.getElementById('product4').value);
+			product.push(" MANS Hoodie");
+			price.push(p4price);
+		}
+		function order5(){
+			p5price=document.getElementById('product5').value*32.00;	
+			window.alert(document.getElementById('product5').value+" MANS Phone Cover is added to your cart. $"+p5price);
+			quantity.push(document.getElementById('product5').value);
+			product.push("MANS Phone Cover");
+			price.push(p5price);
+		}
+		function order6(){
+			p6price=document.getElementById('product6').value*50.00;	
+			window.alert(document.getElementById('product6').value+" MANS Duffel Bag is added to your cart. $"+p6price);
+			quantity.push(document.getElementById('product6').value);
+			product.push(" MANS Duffel Bag");
+			price.push(p6price);
+		}
+
+		</script>
+
+
+
+		<br>
+		<br>
+		<footer class="footer">
+			<center><a class="editor" href="Stud_03_Editor.html">EDITOR</a>
+			<br><br>
+			<a class="rights" href="#">ALL RIGHTS RESERVED</a></center>
+		</footer>
+</body>
+</html>
