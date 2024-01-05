@@ -1,1 +1,2 @@
-A Fitness webiste create
+A Group project done for a fitness website
+
