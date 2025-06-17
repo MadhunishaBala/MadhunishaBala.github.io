@@ -1,0 +1,193 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:#fdf6ec;
+      text-align: center;
+    }
+    header {
+      padding: 80px 20px 40px;
+      height: 310px;
+    }
+        
+    header h1 {
+      margin: 0;
+      font-size:45px;
+    }
+    
+    header h1 span{ color:#990011}
+
+    header p {
+      color: #666;
+      font-size: 19.2px;
+    }
+
+/*Navigation*/
+nav
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+
+nav ul li
+{
+    display:inline-block;
+    list-style:none;
+    margin:8px 20px; 
+
+}
+
+nav ul li a
+{
+    color:rgb(90, 88, 88);
+    text-decoration:none;
+    font-size:16px;
+    position:relative;
+}
+
+nav ul li a::after
+{
+    content:'';
+    width:0;
+    height:3px;
+    background: #990011;
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover::after
+{
+    width:100%;
+}
+
+    .roles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+    .role-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+    .role-card:hover {
+      transform: scale(1.05);
+    }
+    .projects {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: left;
+      padding: 0 20px;
+    }
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .project h4 {
+      margin: 0 0 5px;
+    }
+
+.about-box {
+  background-color: #fdf6ec; /* light beige */
+  color: #5a1a01; /* deep red-brown text */
+  max-width: 950px;
+  margin: 10px auto;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(178, 34, 34, 0.4); /* subtle red glow */
+  text-align: center;
+  line-height: 1.7;
+  border: 1px solid #e6cfc2;
+}
+
+.about-box h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #b22222; /* firebrick red */
+  text-align: center;
+}
+
+ .what-i-do {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.what-i-do h2 {
+  font-size: 2.2em;
+  margin-bottom: 40px;
+}
+
+.role-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.role-card {
+  background-color: #fff;
+  color: #333;
+  padding: 25px 35px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.role-card:hover {
+  transform: scale(1.05);
+}
+
+/* Popup Modal Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

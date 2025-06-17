@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index1.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+  
+<body>
+
+    <div class="Navigation">
+        <nav>
+            <ul>
+                <li><a href=#home><b>HOME</b></a></li>
+                <li><a href=#ABOUTME><b>ABOUT ME</b></a></li>
+                <li><a href=#services><b>SERVICES</b></a></li>
+                <li><a href=#contact><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+    </div>
+            
+  <header>
+    <h1>Hi, I'm <span>Madhunisha</span> Balajeyandhan</h1>
+    <p>Undergraduate in  Artificial Intelligence & Data Science</p>
+  </header>
+
+
+<section class="about-box">
+  <h2>About Me</h2>
+  <p>
+    <i>Meet me, a patient and attentive individual with a sharp ear for listening.</i>
+    <br><br>
+    As a dedicated listener, I believe that understanding is the key to impactful solutions. I'm not just a coder; I'm a night owl who stays burning the midnight oil until the code is done. The thrill of discovering patterns and transforming data into meaningful stories keeps me driven and engaged in every project I undertake.
+    <br><br>
+    However, my journey is not without its quirks; I'm an unapologetic overthinker. Yes, it does add a touch of complexity to my life, but that's the exact trait that pushes me to constantly question and seek out the extraordinary in the ordinary.
+    <br><br>
+    Beyond the code and quirks, my academic background has given me a solid foundation in the fields of programming, data analysis, and machine learning. As I take on new challenges and opportunities, I look forward to blending my technical and soft skills to create real-world solutions.
+    <br><br>
+    Join me on this exciting journey, where every challenge is an opportunity in disguise!
+  </p>
+</section>
+
+<section class="what-i-do" id="services">
+  <h2>What I Do</h2>
+  <div class="role-boxes">
+    <div class="role-card" onclick="openPopup('ba')">Business Analyst</div>
+    <div class="role-card" onclick="openPopup('da')">Data Analyst</div>
+    <div class="role-card" onclick="openPopup('ml')">ML Engineer</div>
+    <div class="role-card" onclick="openPopup('ba')">Business Analyst</div>
+    <div class="role-card" onclick="openPopup('da')">Data Analyst</div>
+    <div class="role-card" onclick="openPopup('ml')">ML Engineer</div>
+    <div class="role-card" onclick="openPopup('da')">Data Analyst</div>
+    <div class="role-card" onclick="openPopup('ml')">ML Engineer</div>
+  </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="popup" class="popup-overlay" onclick="closePopup(event)">
+  <div class="popup-content" id="popup-content">
+    <span class="close-btn" onclick="closePopup(event)">&times;</span>
+    <div id="popup-inner"></div>
+  </div>
+</div>
+
+
+</body>
+</html>
