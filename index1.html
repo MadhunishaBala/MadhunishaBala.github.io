@@ -12,24 +12,33 @@
   
 <body>
 
-    <div class="Navigation">
-        <nav>
-            <ul>
-                <li><a href=#home><b>HOME</b></a></li>
-                <li><a href=#ABOUTME><b>ABOUT ME</b></a></li>
-                <li><a href=#services><b>SERVICES</b></a></li>
-                <li><a href=#contact><b>CONTACT</b></a></li>
-            </ul>
-        </nav>
+    <div id = "home">
+        <div class="Navigation">
+            <nav>
+                <div class ='nav-left'>
+                    <img src="moon.png" id="icon">
+                </div>
+
+                <ul>
+                    <li><a href=#home><b>HOME</b></a></li>
+                    <li><a href=#ABOUTME><b>ABOUT ME</b></a></li>
+                    <li><a href=#services><b>SERVICES</b></a></li>
+                    <li><a href=#contact><b>CONTACT</b></a></li>
+                </ul>
+                
+                <br>
+            </nav>
+        </div>        
+        
+         <br><br>
+        <header>
+            <h1>Hi, I'm <span>Madhunisha</span> Balajeyandhan</h1>
+            <p><span>Undergraduate in  Artificial Intelligence & Data Science</span></p>
+        </header>
     </div>
-            
-  <header>
-    <h1>Hi, I'm <span>Madhunisha</span> Balajeyandhan</h1>
-    <p>Undergraduate in  Artificial Intelligence & Data Science</p>
-  </header>
 
-
-<section class="about-box">
+<br><br>
+<div id ="ABOUTME">
   <h2>About Me</h2>
   <p>
     <i>Meet me, a patient and attentive individual with a sharp ear for listening.</i>
@@ -42,29 +51,78 @@
     <br><br>
     Join me on this exciting journey, where every challenge is an opportunity in disguise!
   </p>
-</section>
+</div>
+<br><br>
 
 <section class="what-i-do" id="services">
-  <h2>What I Do</h2>
+  <h2>Services</h2>
   <div class="role-boxes">
-    <div class="role-card" onclick="openPopup('ba')">Business Analyst</div>
-    <div class="role-card" onclick="openPopup('da')">Data Analyst</div>
-    <div class="role-card" onclick="openPopup('ml')">ML Engineer</div>
-    <div class="role-card" onclick="openPopup('ba')">Business Analyst</div>
-    <div class="role-card" onclick="openPopup('da')">Data Analyst</div>
-    <div class="role-card" onclick="openPopup('ml')">ML Engineer</div>
-    <div class="role-card" onclick="openPopup('da')">Data Analyst</div>
-    <div class="role-card" onclick="openPopup('ml')">ML Engineer</div>
+    <div class="role-card" onclick="openPopup('DA')">Data Analyst</div>
+    <div class="role-card" onclick="openPopup('ML')">Machine Learning Engineer</div>
+    <div class="role-card" onclick="openPopup('AI')">AI Engineer</div>
+    <div class="role-card" onclick="openPopup('BA')">Business Analyst</div>
+    <div class="role-card" onclick="openPopup('PM')">Project Manager</div>
+    <div class="role-card" onclick="openPopup('SM')">SCRUM Master</div>
+    <div class="role-card" onclick="openPopup('TR')">Teacher</div>
+    <div class="role-card" onclick="openPopup('TW')">Technical Writer</div>
   </div>
 </section>
 
-<!-- Popup Modal -->
-<div id="popup" class="popup-overlay" onclick="closePopup(event)">
-  <div class="popup-content" id="popup-content">
+<!-- Modal Popup -->
+<div id="popup-overlay" class="popup-overlay" onclick="closePopup(event)">
+  <div class="popup-box">
     <span class="close-btn" onclick="closePopup(event)">&times;</span>
-    <div id="popup-inner"></div>
+    <div class="popup-content">
+      <div class="popup-left" id="role-experience">
+        <!-- Experience text goes here -->
+      </div>
+      <div class="popup-right" id="role-projects">
+        <!-- Projects list goes here -->
+      </div>
+    </div>
   </div>
 </div>
+
+<br><br>
+
+<section id="contact" class="contact-section">
+  <div class="contact-left">
+    <h2>Contact Me</h2>
+    <form name="submit-to-google-sheet" id="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" name="Email" id="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea name="Message" id="message" rows="6" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+    <div id="msg"></div>
+  </div>
+
+  <div class="contact-right">
+    <h2>Find Me On</h2>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/in/madhunisha-balajeyandhan/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> </a></li>
+      <li><a href="https://github.com/MadhunishaBala" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/madhunisha._/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> </a></li>
+      <li><a href="madhuni@gmail.com"><i class="fas fa-envelope"></i> </a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+    <p>Copyright@MadhunishaBala</p>
+</footer>
 
 
 </body>
